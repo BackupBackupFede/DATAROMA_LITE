@@ -1,0 +1,355 @@
+
+    <html><head><meta charset="utf-8"><title>DATAROMA - BUY uniquement</title>
+    <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #fafafa; color: #222; }
+    h1, h2, h3 { color: #333; }
+    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .flag { font-weight: bold; color: darkred; }
+    footer { margin-top: 40px; font-size: 0.9em; color: #666; }
+    nav a { margin-right: 20px; font-weight: bold; }
+    select { margin-top: 10px; padding: 5px; }
+    </style>
+    <script>
+    function filterFlag(flag) {
+        const rows = document.querySelectorAll("tbody tr");
+        rows.forEach(r => {
+            const val = r.cells[r.cells.length - 1].textContent.trim();
+            if (flag === "ALL" || val.includes(flag)) {
+                r.style.display = "";
+            } else {
+                r.style.display = "none";
+            }
+        });
+    }
+    </script>
+    </head>
+    <body>
+    <nav>
+        <a href="index.html">🏠 Accueil</a>
+        <a href="dataroma_BUY_ADD.html">Buy + Add + New</a>
+    </nav>
+    <h2>💰 Résultats DATAROMA — Transactions BUY uniquement</h2>
+    <p>Généré le 2025-10-14T20:18Z</p>
+
+    <label>Filtrer par flag :</label>
+    <select onchange="filterFlag(this.value)">
+        <option value="ALL">Tous</option>
+        <option value="O">Overlap (O)</option>
+        <option value="P">Pondération >15% (P)</option>
+    </select>
+
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>ticker</th>
+      <th>investor</th>
+      <th>pct_of_portfolio</th>
+      <th>investor_count</th>
+      <th>flag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UNH-</td>
+      <td>[Markel Asset Management, Warren Buffett - Berkshire Hathaway]</td>
+      <td>0.315</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>SE-</td>
+      <td>[Oaktree Capital Management, Dan Loeb - Third Point]</td>
+      <td>0.225</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>RAL-</td>
+      <td>[Dodge &amp; Cox, Dan Loeb - Third Point]</td>
+      <td>0.190</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>PDD-</td>
+      <td>[Li Lu - Himalaya Capital Management]</td>
+      <td>17.930</td>
+      <td>1</td>
+      <td>P</td>
+    </tr>
+    <tr>
+      <td>CROX-</td>
+      <td>[Samantha McLemore - Patient Capital]</td>
+      <td>17.360</td>
+      <td>1</td>
+      <td>P</td>
+    </tr>
+    <tr>
+      <td>PYPL-</td>
+      <td>[Samantha McLemore - Patient Capital]</td>
+      <td>15.600</td>
+      <td>1</td>
+      <td>P</td>
+    </tr>
+    <tr>
+      <td>OKTA-</td>
+      <td>[Spinnaker Capital]</td>
+      <td>12.040</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ENOV-</td>
+      <td>[David Abrams - Abrams Capital Management]</td>
+      <td>7.180</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>COOP-OLD-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>1.830</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>META-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>1.470</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FIX-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>1.320</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DHR-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>1.310</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SDHC-</td>
+      <td>[Chris Davis - Davis Selected Advisers]</td>
+      <td>1.260</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LMT-</td>
+      <td>[Markel Asset Management]</td>
+      <td>1.060</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WDAY-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>0.960</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RKT-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>0.890</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BLCO-</td>
+      <td>[Oaktree Capital Management]</td>
+      <td>0.830</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLS-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>0.830</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DOCU-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>0.650</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LPLA-</td>
+      <td>[Dodge &amp; Cox]</td>
+      <td>0.630</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YMM-</td>
+      <td>[Oaktree Capital Management]</td>
+      <td>0.550</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TDY-</td>
+      <td>[Dodge &amp; Cox]</td>
+      <td>0.530</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>STZ-</td>
+      <td>[Markel Asset Management]</td>
+      <td>0.490</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GTLS-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>0.470</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VRT-</td>
+      <td>[Francisco Garcia Paramés - Cobas Asset Management]</td>
+      <td>0.400</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ICLR-</td>
+      <td>[Chuck Akre - Akre Capital Management]</td>
+      <td>0.390</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LILAK-</td>
+      <td>[Oaktree Capital Management]</td>
+      <td>0.370</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MCHP-</td>
+      <td>[Dodge &amp; Cox]</td>
+      <td>0.270</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YPF-</td>
+      <td>[Oaktree Capital Management]</td>
+      <td>0.260</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MANH-</td>
+      <td>[Francisco Garcia Paramés - Cobas Asset Management]</td>
+      <td>0.250</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HDSN-</td>
+      <td>[Oaktree Capital Management]</td>
+      <td>0.120</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NSSC-</td>
+      <td>[Francisco Garcia Paramés - Cobas Asset Management]</td>
+      <td>0.120</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>JBS-</td>
+      <td>[Oaktree Capital Management]</td>
+      <td>0.090</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LAMR-</td>
+      <td>[Warren Buffett - Berkshire Hathaway]</td>
+      <td>0.060</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALLE-</td>
+      <td>[Warren Buffett - Berkshire Hathaway]</td>
+      <td>0.040</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SABR-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>0.030</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CTEV-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>0.020</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TSLA-</td>
+      <td>[Markel Asset Management]</td>
+      <td>0.020</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TTAN-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>0.020</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ARDT-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>0.010</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASIC-</td>
+      <td>[Dan Loeb - Third Point]</td>
+      <td>0.010</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BTAI-</td>
+      <td>[Oaktree Capital Management]</td>
+      <td>0.010</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    <footer>Source : dataroma.com — Généré automatiquement</footer>
+    </body></html>
+    
