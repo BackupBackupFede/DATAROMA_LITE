@@ -1,0 +1,2017 @@
+
+    <html><head><meta charset="utf-8"><title>DATAROMA - BUY uniquement</title>
+    <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #fafafa; color: #222; }
+    h1, h2, h3 { color: #333; }
+    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .flag { font-weight: bold; color: darkred; }
+    footer { margin-top: 40px; font-size: 0.9em; color: #666; }
+    nav a { margin-right: 20px; font-weight: bold; }
+    select { margin-top: 10px; padding: 5px; }
+    </style>
+    <script>
+    function filterFlag(flag) {
+        const rows = document.querySelectorAll("tbody tr");
+        rows.forEach(r => {
+            const val = r.cells[r.cells.length - 1].textContent.trim();
+            if (flag === "ALL" || val.includes(flag)) {
+                r.style.display = "";
+            } else {
+                r.style.display = "none";
+            }
+        });
+    }
+    </script>
+    </head>
+    <body>
+    <h2>DATAROMA — Transactions BUY ONLY</h2>
+    <p>Timestamp 2026-03-08T20:24Z</p>
+
+    <label>Filter by :</label>
+    <select onchange="filterFlag(this.value)">
+        <option value="ALL">All</option>
+        <option value="O">Overlap (O)</option>
+        <option value="P">Ponderation >15% (P)</option>
+    </select>
+
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>ticker</th>
+      <th>investor</th>
+      <th>pct_of_portfolio</th>
+      <th>investor_count</th>
+      <th>flag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AMZN-</td>
+      <td>[Thomas Russo - Gardner Russo &amp; Quinn, Viking Global Investors, Dennis Hong - ShawSpring Partners, David Rolfe - Wedgewood Partners, Jensen Investment Management, Seth Klarman - Baupost Group]</td>
+      <td>3.831667</td>
+      <td>6</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>MICC-</td>
+      <td>[Mason Hawkins - Longleaf Partners, First Eagle Investment Management, Steven Romick - FPA Crescent Fund]</td>
+      <td>2.360000</td>
+      <td>3</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>MDLN-</td>
+      <td>[Stephen Mandel - Lone Pine Capital, Lee Ainslie - Maverick Capital, Viking Global Investors]</td>
+      <td>1.586667</td>
+      <td>3</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>TMO-</td>
+      <td>[Daniel Loeb - Third Point, Viking Global Investors, Steven Romick - FPA Crescent Fund]</td>
+      <td>0.910000</td>
+      <td>3</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>ISRG-</td>
+      <td>[Mairs &amp; Power Growth Fund, Polen Capital Management, Francois Rochon - Giverny Capital]</td>
+      <td>0.853333</td>
+      <td>3</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>PGR-</td>
+      <td>[Bruce Berkowitz - Fairholme Capital, Viking Global Investors, Daniel Loeb - Third Point]</td>
+      <td>0.636667</td>
+      <td>3</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>MOH-</td>
+      <td>[Michael Burry - Scion Asset Management, Seth Klarman - Baupost Group]</td>
+      <td>22.770000</td>
+      <td>2</td>
+      <td>OP</td>
+    </tr>
+    <tr>
+      <td>BABA-</td>
+      <td>[Dennis Hong - ShawSpring Partners, Daniel Loeb - Third Point]</td>
+      <td>6.055000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>LYV-</td>
+      <td>[Triple Frond Partners, Pat Dorsey - Dorsey Asset Management]</td>
+      <td>5.630000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>GOOG-</td>
+      <td>[Lee Ainslie - Maverick Capital, John Armitage - Egerton Capital]</td>
+      <td>3.765000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>ABM-</td>
+      <td>[First Eagle Investment Management, Alex Roepers - Atlantic Investment Management]</td>
+      <td>2.385000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>EWY-</td>
+      <td>[Yacktman Asset Management, David Tepper - Appaloosa Management]</td>
+      <td>2.110000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>CB-</td>
+      <td>[David Rolfe - Wedgewood Partners, Viking Global Investors]</td>
+      <td>2.065000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>AERO-</td>
+      <td>[Howard Marks - Oaktree Capital Management, Seth Klarman - Baupost Group]</td>
+      <td>1.925000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>BSX-</td>
+      <td>[Stephen Mandel - Lone Pine Capital, Lee Ainslie - Maverick Capital]</td>
+      <td>1.580000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>AMAT-</td>
+      <td>[Lee Ainslie - Maverick Capital, Glenn Greenberg - Brave Warrior Advisors]</td>
+      <td>1.565000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>V-</td>
+      <td>[Stephen Mandel - Lone Pine Capital, Lee Ainslie - Maverick Capital]</td>
+      <td>1.485000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>SLB-</td>
+      <td>[Torray Funds, Greenhaven Associates]</td>
+      <td>1.465000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>GOOGL-</td>
+      <td>[Christopher Bloomstran - Semper Augustus, Viking Global Investors]</td>
+      <td>1.130000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>LPLA-</td>
+      <td>[William Von Mueffling - Cantillon Capital Management, John Armitage - Egerton Capital]</td>
+      <td>0.850000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>RNR-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management, John Armitage - Egerton Capital]</td>
+      <td>0.750000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>SPB-</td>
+      <td>[Lee Ainslie - Maverick Capital, David Einhorn - Greenlight Capital]</td>
+      <td>0.705000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>MA-</td>
+      <td>[AKO Capital, Stephen Mandel - Lone Pine Capital]</td>
+      <td>0.635000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>NYT-</td>
+      <td>[John Armitage - Egerton Capital, Warren Buffett - Berkshire Hathaway]</td>
+      <td>0.595000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>DECK-</td>
+      <td>[Lee Ainslie - Maverick Capital, David Einhorn - Greenlight Capital]</td>
+      <td>0.560000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>ALK-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management, Lee Ainslie - Maverick Capital]</td>
+      <td>0.510000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>AVGO-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management, Jensen Investment Management]</td>
+      <td>0.485000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>SPOT-</td>
+      <td>[Stephen Mandel - Lone Pine Capital, Daniel Loeb - Third Point]</td>
+      <td>0.440000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>FISV-</td>
+      <td>[Christopher Davis - Davis Advisors, Samantha McLemore - Patient Capital Management]</td>
+      <td>0.420000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>TGT-</td>
+      <td>[Bruce Berkowitz - Fairholme Capital, Lee Ainslie - Maverick Capital]</td>
+      <td>0.085000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>FG-</td>
+      <td>[Third Avenue Management, First Eagle Investment Management]</td>
+      <td>0.045000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>EXPE-</td>
+      <td>[Torray Funds, Lee Ainslie - Maverick Capital]</td>
+      <td>0.040000</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>SLM-</td>
+      <td>[Michael Burry - Scion Asset Management]</td>
+      <td>24.160000</td>
+      <td>1</td>
+      <td>P</td>
+    </tr>
+    <tr>
+      <td>KEX-</td>
+      <td>[Alex Roepers - Atlantic Investment Management]</td>
+      <td>13.830000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RKT-</td>
+      <td>[Leon Cooperman]</td>
+      <td>13.500000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLS-</td>
+      <td>[Alex Roepers - Atlantic Investment Management]</td>
+      <td>12.260000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>META-</td>
+      <td>[Bill Ackman - Pershing Square Capital Management]</td>
+      <td>11.370000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BLK-</td>
+      <td>[ValueAct Capital]</td>
+      <td>10.590000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DCH-</td>
+      <td>[Alex Roepers - Atlantic Investment Management]</td>
+      <td>6.800000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASML-</td>
+      <td>[Stephen Mandel - Lone Pine Capital]</td>
+      <td>4.760000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MCO-</td>
+      <td>[John Armitage - Egerton Capital]</td>
+      <td>4.290000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DASH-</td>
+      <td>[Stephen Mandel - Lone Pine Capital]</td>
+      <td>4.210000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CSCO-</td>
+      <td>[AKO Capital]</td>
+      <td>3.650000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AKAM-</td>
+      <td>[Hillman Value Fund]</td>
+      <td>3.260000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BDX-</td>
+      <td>[Steven Romick - FPA Crescent Fund]</td>
+      <td>3.220000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CRM-</td>
+      <td>[Harry Burn - Sound Shore]</td>
+      <td>3.190000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OMC-</td>
+      <td>[John Rogers - Ariel Appreciation Fund]</td>
+      <td>3.100000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CRS-</td>
+      <td>[Stephen Mandel - Lone Pine Capital]</td>
+      <td>3.040000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VMC-</td>
+      <td>[John Armitage - Egerton Capital]</td>
+      <td>2.980000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MSA-</td>
+      <td>[Ruane Cunniff - Sequoia Fund]</td>
+      <td>2.960000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OKE-</td>
+      <td>[Torray Funds]</td>
+      <td>2.930000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TRGP-</td>
+      <td>[Bill Nygren - Oakmark Select Fund]</td>
+      <td>2.810000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WYNN-</td>
+      <td>[John Armitage - Egerton Capital]</td>
+      <td>2.710000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>THC-</td>
+      <td>[Stephen Mandel - Lone Pine Capital]</td>
+      <td>2.610000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ACN-</td>
+      <td>[Ruane Cunniff - Sequoia Fund]</td>
+      <td>2.600000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AZE.BR-</td>
+      <td>[Steven Romick - FPA Crescent Fund]</td>
+      <td>2.600000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>QXO-</td>
+      <td>[Harry Burn - Sound Shore]</td>
+      <td>2.460000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CMG-</td>
+      <td>[Daniel Loeb - Third Point]</td>
+      <td>2.410000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UBER-</td>
+      <td>[John Armitage - Egerton Capital]</td>
+      <td>2.380000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CLH-</td>
+      <td>[Stephen Mandel - Lone Pine Capital]</td>
+      <td>2.370000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DB-</td>
+      <td>[Third Avenue Management]</td>
+      <td>2.360000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CEG-</td>
+      <td>[Daniel Loeb - Third Point]</td>
+      <td>2.310000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>INTU-</td>
+      <td>[Torray Funds]</td>
+      <td>2.200000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UA-</td>
+      <td>[Prem Watsa - Fairfax Financial Holdings]</td>
+      <td>2.180000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CPT-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>2.170000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BP-</td>
+      <td>[Harry Burn - Sound Shore]</td>
+      <td>2.160000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AFRM-</td>
+      <td>[Stephen Mandel - Lone Pine Capital]</td>
+      <td>2.090000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ICE-</td>
+      <td>[Viking Global Investors]</td>
+      <td>2.080000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CHYM-</td>
+      <td>[Samantha McLemore - Patient Capital Management]</td>
+      <td>1.980000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALGN-</td>
+      <td>[Ruane Cunniff - Sequoia Fund]</td>
+      <td>1.950000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ENTG-</td>
+      <td>[Stephen Mandel - Lone Pine Capital]</td>
+      <td>1.890000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>APG-</td>
+      <td>[Daniel Loeb - Third Point]</td>
+      <td>1.580000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WBD-</td>
+      <td>[David Einhorn - Greenlight Capital]</td>
+      <td>1.550000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CROX-</td>
+      <td>[Li Lu - Himalaya Capital Management]</td>
+      <td>1.510000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AGX-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>1.480000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>COMP-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>1.430000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BFAM-</td>
+      <td>[Francois Rochon - Giverny Capital]</td>
+      <td>1.390000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DKS-</td>
+      <td>[Viking Global Investors]</td>
+      <td>1.360000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LBRDK-</td>
+      <td>[Steven Romick - FPA Crescent Fund]</td>
+      <td>1.290000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HSIC-</td>
+      <td>[David Einhorn - Greenlight Capital]</td>
+      <td>1.240000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AR-</td>
+      <td>[David Einhorn - Greenlight Capital]</td>
+      <td>1.230000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BKV-</td>
+      <td>[David Einhorn - Greenlight Capital]</td>
+      <td>1.230000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GPN-</td>
+      <td>[David Einhorn - Greenlight Capital]</td>
+      <td>1.230000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NPCPF-</td>
+      <td>[Steven Romick - FPA Crescent Fund]</td>
+      <td>1.200000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>STLA-</td>
+      <td>[Viking Global Investors]</td>
+      <td>1.160000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CCL-</td>
+      <td>[Viking Global Investors]</td>
+      <td>1.150000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LPX-</td>
+      <td>[Mason Hawkins - Longleaf Partners]</td>
+      <td>1.130000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UNF-</td>
+      <td>[Tweedy Browne Co. - Tweedy Browne Value Fund]</td>
+      <td>1.120000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NOV-</td>
+      <td>[Steven Romick - FPA Crescent Fund]</td>
+      <td>1.110000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IWF-</td>
+      <td>[David Rolfe - Wedgewood Partners]</td>
+      <td>1.060000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MSI-</td>
+      <td>[Jensen Investment Management]</td>
+      <td>1.060000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UNH-</td>
+      <td>[Viking Global Investors]</td>
+      <td>1.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADT-</td>
+      <td>[Charles Bobrinskoy - Ariel Focus Fund]</td>
+      <td>1.040000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SSMXY-</td>
+      <td>[Tweedy Browne Co. - Tweedy Browne Value Fund]</td>
+      <td>1.040000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FND-</td>
+      <td>[Meridian Contrarian Fund]</td>
+      <td>1.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVH-</td>
+      <td>[Meridian Contrarian Fund]</td>
+      <td>0.950000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BALL-</td>
+      <td>[David Tepper - Appaloosa Management]</td>
+      <td>0.930000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MKGAF-</td>
+      <td>[Steven Romick - FPA Crescent Fund]</td>
+      <td>0.930000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ERII-</td>
+      <td>[Meridian Contrarian Fund]</td>
+      <td>0.920000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MRP-</td>
+      <td>[Bill Miller - Miller Value Partners]</td>
+      <td>0.870000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FDS-</td>
+      <td>[John Rogers - Ariel Appreciation Fund]</td>
+      <td>0.850000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IMDZF-</td>
+      <td>[Steven Romick - FPA Crescent Fund]</td>
+      <td>0.820000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LII-</td>
+      <td>[Viking Global Investors]</td>
+      <td>0.810000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LMT-</td>
+      <td>[Robert Olstein - Olstein Capital Management]</td>
+      <td>0.810000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BN-</td>
+      <td>[Dodge &amp; Cox]</td>
+      <td>0.790000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SLDE-</td>
+      <td>[David Einhorn - Greenlight Capital]</td>
+      <td>0.790000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TW-</td>
+      <td>[Viking Global Investors]</td>
+      <td>0.790000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>JBS-</td>
+      <td>[Christopher Davis - Davis Advisors]</td>
+      <td>0.770000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AJG-</td>
+      <td>[Viking Global Investors]</td>
+      <td>0.720000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WLTH-</td>
+      <td>[Chase Coleman - Tiger Global Management]</td>
+      <td>0.690000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HRSEF-</td>
+      <td>[Steven Romick - FPA Crescent Fund]</td>
+      <td>0.680000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DLR-</td>
+      <td>[Viking Global Investors]</td>
+      <td>0.620000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LOW-</td>
+      <td>[Viking Global Investors]</td>
+      <td>0.590000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FIG-</td>
+      <td>[Viking Global Investors]</td>
+      <td>0.570000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SOLS-</td>
+      <td>[Robert Olstein - Olstein Capital Management]</td>
+      <td>0.570000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TFIN-</td>
+      <td>[Meridian Contrarian Fund]</td>
+      <td>0.570000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TNDM-</td>
+      <td>[Meridian Contrarian Fund]</td>
+      <td>0.550000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TRNS-</td>
+      <td>[Meridian Contrarian Fund]</td>
+      <td>0.550000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BBY-</td>
+      <td>[Meridian Contrarian Fund]</td>
+      <td>0.540000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KRSP-</td>
+      <td>[Howard Marks - Oaktree Capital Management]</td>
+      <td>0.540000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FSV-</td>
+      <td>[Third Avenue Management]</td>
+      <td>0.530000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLG-</td>
+      <td>[Third Avenue Management]</td>
+      <td>0.500000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RYCEY-</td>
+      <td>[Ruane Cunniff - Sequoia Fund]</td>
+      <td>0.500000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BA-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management]</td>
+      <td>0.460000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BAH-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management]</td>
+      <td>0.460000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CTRI-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.450000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CNTA-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.440000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>INFY-</td>
+      <td>[Howard Marks - Oaktree Capital Management]</td>
+      <td>0.430000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NTNX-</td>
+      <td>[Terry Smith - Fundsmith]</td>
+      <td>0.420000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIOT-</td>
+      <td>[Viking Global Investors]</td>
+      <td>0.420000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SDXOF-</td>
+      <td>[Steven Romick - FPA Crescent Fund]</td>
+      <td>0.410000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ZTS-</td>
+      <td>[Mairs &amp; Power Growth Fund]</td>
+      <td>0.410000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVTR-</td>
+      <td>[Steven Romick - FPA Crescent Fund]</td>
+      <td>0.400000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ONIT-</td>
+      <td>[Howard Marks - Oaktree Capital Management]</td>
+      <td>0.390000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IQV-</td>
+      <td>[Viking Global Investors]</td>
+      <td>0.370000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SNDX-</td>
+      <td>[Torray Funds]</td>
+      <td>0.320000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WIX-</td>
+      <td>[Daniel Loeb - Third Point]</td>
+      <td>0.320000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CF-</td>
+      <td>[Bruce Berkowitz - Fairholme Capital]</td>
+      <td>0.300000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BRKR-</td>
+      <td>[Meridian Contrarian Fund]</td>
+      <td>0.280000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FRMI-</td>
+      <td>[Meridian Contrarian Fund]</td>
+      <td>0.280000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VSTM-</td>
+      <td>[Torray Funds]</td>
+      <td>0.260000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CSX-</td>
+      <td>[Daniel Loeb - Third Point]</td>
+      <td>0.250000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RPHCF-</td>
+      <td>[Steven Romick - FPA Crescent Fund]</td>
+      <td>0.240000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TFX-</td>
+      <td>[Greenhaven Associates]</td>
+      <td>0.240000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADMA-</td>
+      <td>[Terry Smith - Fundsmith]</td>
+      <td>0.220000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>JGRW-</td>
+      <td>[Jensen Investment Management]</td>
+      <td>0.220000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WST-</td>
+      <td>[Viking Global Investors]</td>
+      <td>0.220000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BIL-</td>
+      <td>[Yacktman Asset Management]</td>
+      <td>0.210000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TDG-</td>
+      <td>[Stephen Mandel - Lone Pine Capital]</td>
+      <td>0.190000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>QURE-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.170000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VALE-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management]</td>
+      <td>0.160000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CRDO-</td>
+      <td>[Duan Yongping - H&amp;H International Investment]</td>
+      <td>0.120000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CRWV-</td>
+      <td>[Duan Yongping - H&amp;H International Investment]</td>
+      <td>0.120000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HLT-</td>
+      <td>[Stephen Mandel - Lone Pine Capital]</td>
+      <td>0.120000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IEX-</td>
+      <td>[Dodge &amp; Cox]</td>
+      <td>0.120000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CNI-</td>
+      <td>[Prem Watsa - Fairfax Financial Holdings]</td>
+      <td>0.090000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CTEV-</td>
+      <td>[Daniel Loeb - Third Point]</td>
+      <td>0.090000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NRP-</td>
+      <td>[Bruce Berkowitz - Fairholme Capital]</td>
+      <td>0.090000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPRY-</td>
+      <td>[Daniel Loeb - Third Point]</td>
+      <td>0.090000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KRUS-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.060000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADBE-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CHTR-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CWH-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EFX-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ERIE-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HRB-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IMAX-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LZ-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MUSA-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NFLX-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OLLI-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RHI-</td>
+      <td>[Greenhaven Associates]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ROOT-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RVLV-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SITE-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TMHC-</td>
+      <td>[Greenhaven Associates]</td>
+      <td>0.050000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FVRR-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.040000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IVV-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.040000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MCD-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.040000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TEM-</td>
+      <td>[Duan Yongping - H&amp;H International Investment]</td>
+      <td>0.040000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VWO-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management]</td>
+      <td>0.040000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AAL-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ANF-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BJ-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CAG-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>COST-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DGEAF-</td>
+      <td>[Thomas Russo - Gardner Russo &amp; Quinn]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ETSY-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MKC-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NKE-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SEB-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SIVR-</td>
+      <td>[Christopher Bloomstran - Semper Augustus]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SN-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TPR-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UAL-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VLO-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.030000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BMY-</td>
+      <td>[David Katz - Matrix Asset Advisors]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DORM-</td>
+      <td>[First Eagle Investment Management]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EBAY-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EFXT-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EXP-</td>
+      <td>[First Eagle Investment Management]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EZA-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HSY-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LUV-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MAR-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MZTI-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PRTH-</td>
+      <td>[Prem Watsa - Fairfax Financial Holdings]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RACE-</td>
+      <td>[Jensen Investment Management]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RELY-</td>
+      <td>[First Eagle Investment Management]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RH-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WDFC-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WMT-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YUM-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.020000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ABNB-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AKBLF-</td>
+      <td>[Thomas Russo - Gardner Russo &amp; Quinn]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALGT-</td>
+      <td>[First Eagle Investment Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASHR-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BFLY-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BRO-</td>
+      <td>[Thomas Gayner - Markel Group]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BROS-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CPB-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CUBE-</td>
+      <td>[Christopher Davis - Davis Advisors]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DOX-</td>
+      <td>[Jensen Investment Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ENR-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ERO-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ESTA-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EWZ-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GEN-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>INMD-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KRSP.WS-</td>
+      <td>[Howard Marks - Oaktree Capital Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PL-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SEI-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SHG-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPHR-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SVV-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VTI-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.010000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AORT-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>APEI-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>APPN-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AXTI-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BW-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CCO-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CELC-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CPS-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CSIQ-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CYTK-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DNLI-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ESPR-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FIGR-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FIGS-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FIX-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FROG-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FRPT-</td>
+      <td>[Lee Ainslie - Maverick Capital]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GAP-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GDYN-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GGAL-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GHM-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GRBK-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HLLY-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HQY-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IBM-</td>
+      <td>[Thomas Russo - Gardner Russo &amp; Quinn]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IOO-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>JNJ-</td>
+      <td>[Thomas Russo - Gardner Russo &amp; Quinn]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KRMN-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KURA-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LQDA-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LYFT-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MAMA-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MESO-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NAMS-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NUVL-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OLMA-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PACB-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PDS-</td>
+      <td>[Sarah Ketterer - Causeway Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PGEN-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PRLB-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PSNL-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RKLB-</td>
+      <td>[Polen Capital Management]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SCWO-</td>
+      <td>[David Katz - Matrix Asset Advisors]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPGI-</td>
+      <td>[Glenn Greenberg - Brave Warrior Advisors]</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    <footer>Source : dataroma.com</footer>
+    </body></html>
+    
